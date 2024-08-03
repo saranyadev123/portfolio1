@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" src="pro1.css">
+</head>
+<style>
+    @media screen and (min-width:0px) and (max-width:1440px) {
+        .parent{
+            border: 2px solid;
+            height: 1200px;
+            width: 1000px;
+        }
+        img{
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        .img1{
+            background-color: aquamarine;
+        }
+        .container{
+            position: relative;
+        }
+        .img2{
+            position: absolute;
+            top: -64px;
+            
+        }
+
+        
+    }
+</style>
+<body>
+    <div class="parent">
+        <img class="img1"  src="../html/assests/image/logo.png">
+        <div class="container">
+        <img class="img2" height="500px" width="1000px" src="../html/assests/image/page-heading-bg.jpg">
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

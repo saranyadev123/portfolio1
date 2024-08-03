@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class]{
+            border: 2px solid chocolate;
+            height: 450px;
+            width: 400px;
+            background-color: aqua;
+            position: relative;
+            top: 150px;
+            left: 200px;
+        }
+        [id="fname"]{
+            background-color: cadetblue;
+        }
+        [id="sname"]{
+            background-color: blue;  
+        }
+        [for="fname"]{
+            color:crimson;
+        }
+        [id|="sname"]{
+            border: 0cap2px solid red;
+            background-color: blueviolet;
+        }
+        [for|="regnum"]{
+            color:coral   
+        }
+        [for="mail"]{
+            color: darkblue;
+        }
+        [id="regnum"]{
+            background-color: rosybrown;
+        }
+        [for~="mail"]{
+            color: brown;
+        }
+        [id$="no"]{
+            background-color: crimson;
+        }
+        [id*="mail"]{
+            background-color: darkgrey;
+        }
+        [id="pswrd"]{
+            background-color: deepskyblue;
+        }
+        [id^="t"]{
+            background-color:darkseagreen;
+        }
+        [id="fle"]{
+            background-color: darkkhaki;
+        }
+        [for~="mbleno"]{
+            color:blue;
+        }
+        [for~="pswrd"]{
+            color:blueviolet;
+        }
+        [for~="fle"]{
+            color:darkolivegreen;
+        }
+
+    </style>
+</head>
+<body> 
+    <div style="text-align: center;">
+    <div  class="md">
+        <label for="fname"><b>Firstname:</b></label>
+        <br>
+        <input id="fname" name="fname" required type="text"/>
+        <br>
+        <label for="sname"><b>Secondname:</b></label><br>
+        <input id="sname" name="sname" required type="text"/>
+        <br>
+        <label for="regnum"><b>Regno:</b></label><br>
+        <input id="regnum" type="text" name="regnum" required type="text" pattern="[0-9]{10}"/><br>
+        <label for="mail"><b>Mail:</b></label><br>
+        <input id="mail" placeholder="saranya@gmail.com"   name="mail" type="email"/><br>
+        <label for="mbleno"><b>Mobile no:</b></label><br>
+        <input id="mbleno" name="mbleno" type="tel" pattern="[0-9]{10}"/><br>
+        <label for="pswrd"><b>Password:</b></label><br>
+        <input id="pswrd" name="pswrd"  type="pswrd" pattern="[0-9]{10}"/><br>
+        <label for="tym"><b>Date & Time:</b></label>
+        <br>
+        <input id="tym" name="tym"  type="datetime-local"><br>
+        <br>
+        <label for="fle"><b>File:</b></label>
+        <input id="fle"  name="fle" type="file">
+
+        <br>
+
+        <br>
+        <br><input type="submit">
+    </div>
+    </div>
+
+</body>
+</html>

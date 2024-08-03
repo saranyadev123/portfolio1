@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            height: 500px;
+            width: 500px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .child1{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+        .child2{
+            grid-row: 2/4;
+            grid-column: 1/2;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .child3{
+            grid-column: 2/4;
+            grid-row: 2/4;
+            background-color: brown;
+            text-align: center;
+        }
+        .child4{
+            grid-row: 2/4;
+            grid-column: 4/5;
+            background-color: chocolate;
+            text-align: center;
+        }
+        .child5{
+            grid-row: 4/5;
+            grid-column: 1/5;
+            background-color: darkblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">header</div>
+        <div class="child2">navbar</div>
+        <div class="child3">content</div>
+        <div class="child4">aside</div>
+        <div class="child5">footer</div>
+    </div>
+</body>
+</html>

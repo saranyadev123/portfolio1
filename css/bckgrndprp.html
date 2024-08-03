@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,td{
+            border: 5px solid black;
+            border-collapse: collapse;
+        }
+    .tb1{
+        background-image: linear-gradient(to top,pink,red);
+    }
+    .tb2{
+        background-image: linear-gradient(to left,pink, white);
+    }
+    .tb3{
+        background-image: linear-gradient(to right,green,orange);
+    }
+    @media(max-width:768px){
+        .tb2,.tb3{
+            display:none;
+        }
+    }
+    @media(max-width:480px){
+        .tb1,.tb3{
+            display:none;
+        }
+        .tb2{
+            display:block;
+        }
+    }@media(max-width:320px){
+        .tb1,.tb2{
+            display:none;
+        }
+        .tb3{
+            display:block;
+        }
+    }
+
+    .tb1,.tb2,.tb3{
+        box-shadow:2 2 10px pink;
+    }
+    .tb1,.tb2.tb3{
+        position: relative;
+    }
+
+
+
+
+
+    
+</style>
+<body>
+    <table class="tb1">
+        <tr>
+            <td>day1</td>
+            <td>day2</td>
+        </tr>
+        <tr>
+            <td>day1</td>
+            <td>day2</td>
+        </tr>
+    </table>
+    <table class="tb2">
+        <tr>
+            <td>day1</td>
+            <td>day2</td>
+            <td>day3</td>
+        </tr>
+        <tr>
+            <td>day4</td>
+            <td>day5</td>
+            <td>day6</td>
+        </tr>
+        <tr>
+            <td>day7</td>
+            <td>day8</td>
+            <td>day9</td>
+        </tr>
+    </table>
+    <table class="tb3">
+        <tr>
+            <td>day1</td>
+            <td>day2</td>
+            <td>day3</td>
+            <td>day4</td>
+        </tr>
+        <tr>
+            <td>day5</td>
+            <td>day6</td>
+            <td>day7</td>
+            <td>day8</td>
+        </tr>
+        <tr>
+            <td>day9</td>
+            <td>day10</td>
+            <td>day11</td>
+            <td>day12</td>
+        </tr>
+        <tr>
+            <td>day13</td>
+            <td>day14</td>
+            <td>day15</td>
+            <td>day16</td>
+        </tr>
+    </table>
+</body>
+</html>
